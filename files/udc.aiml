@@ -7,8 +7,40 @@
     </category>
     
     <category>
+        <pattern>HELLO</pattern>
+        <template>
+            <random>
+                <li>Hi, friend! My name is Owlfred, your WGU career advisor for the School of Information Technology! How can I help you?</li>
+                <li>Hey, Night Owl! My name is Owlfred, your WGU career advisor for the School of Information Technology! How can I help you?</li>
+                <li>Hello there! My name is Owlfred, your WGU career advisor for the School of Information Technology! How can I help you?</li>
+            </random>
+        </template>
+    </category>
+    
+        <category>
+        <pattern>HI</pattern>
+        <template>
+            <random>
+                <li>Hi, friend! My name is Owlfred, your WGU career advisor for the School of Information Technology! How can I help you?</li>
+                <li>Hey, Night Owl! My name is Owlfred, your WGU career advisor for the School of Information Technology! How can I help you?</li>
+                <li>Hello there! My name is Owlfred, your WGU career advisor for the School of Information Technology! How can I help you?</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
         <pattern>MY NAME IS * *</pattern>
         <template>Hello <star index="1"/>. How are you Mr. <star index="2"/>?</template>
+    </category>
+    
+        <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>Hello <star index="1"/>! How are you?<set name="firstname"/><star/><set/></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS MY NAME</pattern>
+        <template>Your name is <get name="firstname"/></template>
     </category>
     
     <category>
@@ -17,8 +49,20 @@
     </category>
     
     <category>
-        <pattern>_ job _ career</pattern>
-        <template>Do you need help finding a future career?</template>
+        <pattern>_ CAREER *</pattern>
+        <template>Do you need guidance in selecting your future career?</template>
+    </category>
+    
+    <category>
+        <that>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</that>
+        <pattern>YES</pattern>
+        <template>Awesome! I'd be glad to help you with that! What are some of your intrests?</template>
+    </category>
+    
+        <category>
+        <that>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</that>
+        <pattern>NO</pattern>
+        <template>My job is to help students choose their future career based on their strengths and intrests. If that's something I can help you with, say "Career Help!"</template>
     </category>
     
     <category>
