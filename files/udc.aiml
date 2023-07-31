@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+    
+    <set>
+        
+        
+    </set>
+
  
     <category>
         <pattern>HELLO *</pattern>
@@ -143,7 +149,7 @@
     <category>
         <that>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</that>
         <pattern>YES</pattern>
-        <template>Awesome! I'd be glad to help you with that! What are some of your intrests?</template>
+        <template>Awesome! I'd be glad to help you with that! Tell me a few computing tasks you have enjoyed the most?</template>
     </category>
     
         <category>
@@ -152,8 +158,7 @@
         <template>My job is to help students choose their future career based on their strengths and intrests. If that's something I can help you with, say "Career Help!"</template>
     </category>
     
-    <-- Conditions --/>
-    
+
     <category>
         <pattern></pattern>
         <template></template>
