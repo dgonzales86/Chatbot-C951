@@ -56,7 +56,7 @@
     <category>
         <pattern>MY NAME IS * *</pattern>
         <template>
-            Hello <star index="1"/>. How are you Mr. <star index="2"/>?
+            Hello <star index="1"/>.  <star index="2"/>?
         </template>
     </category>
     
