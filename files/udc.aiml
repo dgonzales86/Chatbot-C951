@@ -134,7 +134,9 @@
     <category>
         <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
         <pattern><set>art</set></pattern>
-        <template>That's great! You seem creative! do you like</template>
+        <template>That's great! You seem creative! I think you would enjoy bing a UX/UI Designer! UX/UI designers enhance the user experience by designing visually appealing user interfaces!
+        Like all careers, you will still encounter problem-solving tasks, such as attracting customers, or creating a user-friendly application interface. The great thing is, you will be able to use your artistic abilities to solve these challenges!
+        </template>
     </category>
 
 <!-- This section is where I Narrow choices down  -->    
