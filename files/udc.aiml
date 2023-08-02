@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-    
-    <set>
-        
-        
-    </set>
 
- 
     <category>
         <pattern>HELLO *</pattern>
         <template>
-            Hello User!
+            <srai>HELLO</srai>
         </template>
     </category>
     
@@ -52,35 +46,7 @@
             <srai>HELLO</srai>
         </template>
     </category>
-    
-    <category>
-        <pattern>MY NAME IS * *</pattern>
-        <template>
-            Hello <star index="1"/>.  <star index="2"/>?
-        </template>
-    </category>
-    
-    <category>
-        <pattern>MY NAME IS *</pattern>
-        <template>
-            Hello <star index="1"/>! How are you?<set name="firstname"/><star/><set/>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>WHAT IS MY NAME</pattern>
-        <template>
-            Your name is <get name="firstname"/>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>SAY *</pattern>
-        <template>
-            <star index="1"/>
-        </template>
-    </category>
-    
+
     <category>
         <that>HOW CAN I HELP YOU</that>
         <pattern>CAREER</pattern>
@@ -145,25 +111,78 @@
         </template>
     </category>
     
+    <category>
+        <that>HOW CAN I HELP YOU</that>
+        <pattern>*</pattern>
+        <template>I don't understand that. <srai>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</srai></template>
+    </category>
+    
+    <category>
+        <that>DO YOU NEED HELP CHOOSING A FUTURE CAREER</that>
+        <pattern><set>yes</set></pattern>
+        <template><srai>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</srai></template>
+    </category>
+    
 
     <category>
         <that>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</that>
-        <pattern>YES</pattern>
-        <template>Awesome! I'd be glad to help you with that! Tell me a few computing tasks you have enjoyed the most?</template>
+        <pattern><set>yes</set></pattern>
+        <template>Awesome! I'll be glad to help you with that! Do you enjoy solving problems more, artistic work more, or do you like them about the same?</template>
     </category>
     
-        <category>
-        <that>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</that>
-        <pattern>NO</pattern>
-        <template>My job is to help students choose their future career based on their strengths and intrests. If that's something I can help you with, say "Career Help!"</template>
-    </category>
-    
-
+<!-- This section is where I Narrow choices down by ART fans       -->
     <category>
-        <pattern></pattern>
+        <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
+        <pattern><set>art</set></pattern>
+        <template>That's great! You seem creative! do you like</template>
+    </category>
+
+<!-- This section is where I Narrow choices down by MATH fans       -->    
+    <category>
+        <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
+        <pattern><set>problemsolving</set></pattern>
+        <template>That's awesome! I like to solve problems too!</template>
+    </category>
+    
+<!-- This section is where I Narrow choices down by MATH fans       -->    
+    <category>
+        <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
+        <pattern><set>same</set></pattern>
+        <template>That's awesome! Do you enjoy video games?</template>
+    </category>
+    
+    <category>
+        <that>DO YOU ENJOY VIDEO GAMES</that>
+        <pattern><set>yes</set></pattern>
         <template></template>
     </category>
     
+    <category>
+        <that>DO YOU ENJOY VIDEO GAMES</that>
+        <pattern><set>no</set></pattern>
+        <template></template>
+    </category>
+    
+    
+
+    <category>
+        <that>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</that>
+        <pattern>NO</pattern>
+        <template>My job is to help students, graduating soon, choose their future career! I'll be here if you change your mind! Have a nice day!</template>
+    </category>
+
+    <category>
+        <that>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</that>
+        <pattern>*</pattern>
+        <template>My job is to help students choose their future career based on their strengths and intrests. If that's something I can help you with, say "Career Help!"</template>
+    </category>    
+
+    <category>
+        <that>HOW CAN I HELP YOU</that>
+        <pattern>CAREER HELP</pattern>
+        <template><srai>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</srai></template>
+    </category>
+
     <category>
         <pattern></pattern>
         <template></template>
