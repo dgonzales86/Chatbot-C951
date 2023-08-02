@@ -168,8 +168,8 @@
     </category>
     
     <category>
-        <that>DO YOU ENJOY VIDEO GAMES</that>
-        <pattern><set>yes</set></pattern>
+        <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
+        <pattern><set>problemsolving</set></pattern>
         <template></template>
     </category>
     
