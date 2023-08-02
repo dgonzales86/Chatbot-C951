@@ -130,25 +130,41 @@
         <template>Awesome! I'll be glad to help you with that! Do you enjoy solving problems more, artistic work more, or do you like them about the same?</template>
     </category>
     
-<!-- This section is where I Narrow choices down by ART fans       -->
+<!-- This section is where I Narrow choices down  -->
     <category>
         <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
         <pattern><set>art</set></pattern>
         <template>That's great! You seem creative! do you like</template>
     </category>
 
-<!-- This section is where I Narrow choices down by MATH fans       -->    
+<!-- This section is where I Narrow choices down  -->    
     <category>
         <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
         <pattern><set>problemsolving</set></pattern>
         <template>That's awesome! I like to solve problems too!</template>
     </category>
     
-<!-- This section is where I Narrow choices down by MATH fans       -->    
+<!-- This section is where I Narrow choices down  -->    
     <category>
         <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
         <pattern><set>same</set></pattern>
-        <template>That's awesome! Do you enjoy video games?</template>
+        <template>That's awesome! Which course would you voluntarily enroll in? A course on a new video game engine, or a course on marketing?</template>
+    </category>
+    
+    <category>
+        <that>A COURSE ON A NEW VIDEO GAME ENGINE, OR A COURSE ON MARKETING</that>
+        <pattern><set>videogame</set></pattern>
+        <template>With the information you told me in this conversation, I think you would enjoy being a Video Game Developer!
+        <br/>Video game developers utilize problem solving by programming and creating challenges for others to enjoy! Additonally, they get to utilize their artistic abilities
+        <br/> by designing the artwork of their video games!</template>
+    </category>
+    
+    <category>
+        <that>A COURSE ON A NEW VIDEO GAME ENGINE, OR A COURSE ON MARKETING</that>
+        <pattern><set>marketing</set></pattern>
+        <template>With the information you told me in this conversation, I think you would enjoy being a Web Developer!<br/>
+        Web developers utilize their problem solving abilities by creating code using HTML, CSS, Javascript, and various frameworks to suit the need of their stakeholders!<br/>
+        They also get to flex their "artistic muscles" by creating websites that are both visually appealing and easy to navigate!</template>
     </category>
     
     <category>
