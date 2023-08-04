@@ -2,14 +2,7 @@
 <aiml>
 
     <category>
-        <pattern>HELLO *</pattern>
-        <template>
-            <srai>HELLO</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>HELLO</pattern>
+        <pattern><set>hello</set></pattern>
         <template>
             <random>
                 <li>Hi, friend! My name is Owlfred, your WGU career advisor for the School of Information Technology! How can I help you?</li>
@@ -20,33 +13,14 @@
     </category>
     
     <category>
-        <pattern>HI</pattern>
+        <pattern>
+            *
+        </pattern>
         <template>
-            <srai>HELLO</srai>
+            Sorry, I didn't understand that. Try saying hi :-)
         </template>
     </category>
     
-    <category>
-        <pattern>HOWDY</pattern>
-        <template>
-            <srai>HELLO</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>HI THERE</pattern>
-        <template>
-            <srai>HELLO</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>HEY</pattern>
-        <template>
-            <srai>HELLO</srai>
-        </template>
-    </category>
-
     <category>
         <that>HOW CAN I HELP YOU</that>
         <pattern>CAREER</pattern>
@@ -89,7 +63,7 @@
     
     <category>
         <that>HOW CAN I HELP YOU</that>
-        <pattern>* _JOB</pattern>
+        <pattern>* _ JOB</pattern>
         <template>
             <srai>_CAREER</srai>
         </template>
@@ -143,14 +117,27 @@
     <category>
         <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
         <pattern><set>problemsolving</set></pattern>
-        <template>That's awesome! I like to solve problems too!</template>
+        <template>That's awesome! I like to solve problems too!<br/>
+        Imagine that a friend of yours is needing some IT help for his new business. Which task would you enjoy helping him with more? Planning and setting up a new network for their business, or developing a custom application to help track sales and inventory?</template>
+    </category>
+    
+    <category>
+        <that>PLANNING AND SETTING UP A NEW NETWORK FOR THEIR BUSINESS, OR DEVELOPING A CUSTOM APPLICATION TO HELP TRACK SALES AND INVENTORY</that>
+        <pattern><set>network</set></pattern>
+        <template>Nice! I think you would enjoy being a Network Engineer! Network engineers plan, design, and implement secure networks for businesses! </template>
+    </category>
+    
+    <category>
+        <that>PLANNING AND SETTING UP A NEW NETWORK FOR THEIR BUSINESS, OR DEVELOPING A CUSTOM APPLICATION TO HELP TRACK SALES AND INVENTORY</that>
+        <pattern><set>software</set></pattern>
+        <template>Nice! I think you would enjoy being a Software Engineer! Software engineers design and develop various application solutions for stakeholders.</template>
     </category>
     
 <!-- This section is where I Narrow choices down  -->    
     <category>
         <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
         <pattern><set>same</set></pattern>
-        <template>That's awesome! Which course would you voluntarily enroll in? A course on a new video game engine, or a course on marketing?</template>
+        <template>That's awesome! Which course would you more likely voluntarily enroll in? A course on a new video game engine, or a course on marketing?</template>
     </category>
     
     <category>
@@ -166,22 +153,8 @@
         <pattern><set>marketing</set></pattern>
         <template>With the information you told me in this conversation, I think you would enjoy being a Web Developer!<br/>
         Web developers utilize their problem solving abilities by creating code using HTML, CSS, Javascript, and various frameworks to suit the need of their stakeholders!<br/>
-        They also get to flex their "artistic muscles" by creating websites that are both visually appealing and easy to navigate!</template>
+        They also get to let their artistic abilities shine by creating websites that are both visually appealing and easy to navigate!</template>
     </category>
-    
-    <category>
-        <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
-        <pattern><set>problemsolving</set></pattern>
-        <template></template>
-    </category>
-    
-    <category>
-        <that>DO YOU ENJOY VIDEO GAMES</that>
-        <pattern><set>no</set></pattern>
-        <template></template>
-    </category>
-    
-    
 
     <category>
         <that>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</that>
@@ -201,24 +174,5 @@
         <template><srai>DO YOU NEED GUIDANCE IN SELECTING YOUR FUTURE CAREER</srai></template>
     </category>
 
-    <category>
-        <pattern></pattern>
-        <template></template>
-    </category>
-    
-    <category>
-        <pattern></pattern>
-        <template></template>
-    </category>
-    
-    <category>
-        <pattern></pattern>
-        <template></template>
-    </category>
-    
-    <category>
-        <pattern></pattern>
-        <template></template>
-    </category>
  
 </aiml>
