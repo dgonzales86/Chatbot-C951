@@ -108,7 +108,7 @@
     <category>
         <that>DO YOU ENJOY SOLVING PROBLEMS MORE, ARTISTIC WORK MORE, OR DO YOU LIKE THEM ABOUT THE SAME</that>
         <pattern><set>art</set></pattern>
-        <template>That's great! You seem creative! I think you would enjoy bing a UX/UI Designer! UX/UI designers enhance the user experience by designing visually appealing user interfaces!
+        <template>That's great! Based on your strengths and preferences in artistic work, I think you would enjoy bing a UX/UI Designer! UX/UI designers enhance the user experience by designing visually appealing user interfaces!
         Like all careers, you will still encounter problem-solving tasks, such as attracting customers, or creating a user-friendly application interface. The great thing is, you will be able to use your artistic abilities to solve these challenges!
         </template>
     </category>
@@ -124,13 +124,13 @@
     <category>
         <that>PLANNING AND SETTING UP A NEW NETWORK FOR THEIR BUSINESS, OR DEVELOPING A CUSTOM APPLICATION TO HELP TRACK SALES AND INVENTORY</that>
         <pattern><set>network</set></pattern>
-        <template>Nice! I think you would enjoy being a Network Engineer! Network engineers plan, design, and implement secure networks for businesses! </template>
+        <template>Nice! Based on your strenths of problem solving and preference of setting up networks, I think you would enjoy being a Network Engineer! Network engineers plan, design, and implement secure networks for businesses! </template>
     </category>
     
     <category>
         <that>PLANNING AND SETTING UP A NEW NETWORK FOR THEIR BUSINESS, OR DEVELOPING A CUSTOM APPLICATION TO HELP TRACK SALES AND INVENTORY</that>
         <pattern><set>software</set></pattern>
-        <template>Nice! I think you would enjoy being a Software Engineer! Software engineers design and develop various application solutions for stakeholders.</template>
+        <template>Nice! Based on your strenths in problem solving and preference for application development, I think you would enjoy being a Software Engineer! Software engineers design and develop various application solutions for stakeholders.</template>
     </category>
     
 <!-- This section is where I Narrow choices down  -->    
