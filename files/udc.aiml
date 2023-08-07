@@ -23,7 +23,7 @@
     
     <category>
         <that>HOW CAN I HELP YOU</that>
-        <pattern>CAREER</pattern>
+        <pattern><set>career</set></pattern>
         <template>
             Do you need guidance in selecting your future career?
         </template>
